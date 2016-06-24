@@ -1,0 +1,139 @@
+body {
+
+         padding-top: 70px;
+	background: -moz-radial-gradient(center, ellipse cover, rgba(218,112,214,1) 0%, rgba(153,50,204,1) 99%, rgba(153,50,204,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(218,112,214,1)), color-stop(99%, rgba(153,50,204,1)), color-stop(100%, rgba(153,50,204,1))); /* safari4+,chrome */
+background:-webkit-radial-gradient(center, ellipse cover, rgba(218,112,214,1) 0%, rgba(153,50,204,1) 99%, rgba(153,50,204,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-radial-gradient(center, ellipse cover, rgba(218,112,214,1) 0%, rgba(153,50,204,1) 99%, rgba(153,50,204,1) 100%); /* opera 11.10+ */
+background: -ms-radial-gradient(center, ellipse cover, rgba(218,112,214,1) 0%, rgba(153,50,204,1) 99%, rgba(153,50,204,1) 100%); /* ie10+ */
+background:radial-gradient(ellipse at center, rgba(218,112,214,1) 0%, rgba(153,50,204,1) 99%, rgba(153,50,204,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DA70D6', endColorstr='#9932CC',GradientType=1 ); /* ie6-9 */
+}
+
+.test{
+	/*background-color: rgba(49, 112, 143, 0.18);*/
+	border: 5px solid rgba(0, 0, 0, 0.18);
+	background-color: hsla(307, 35%, 50%, 0.56);
+}
+.fancy-text{
+	display: inline-block;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+float: none;
+z-index: auto;
+width: auto;
+height: auto;
+position: static;
+cursor: default;
+opacity: 1;
+margin: 0;
+padding: 0;
+overflow: visible;
+border: none;
+-webkit-border-radius: 0;
+border-radius: 0;
+font: normal 70px/1 "Aladin", Helvetica, sans-serif;
+color: rgba(48,48,48,1);
+text-align: center;
+text-transform: normal;
+-o-text-overflow: clip;
+text-overflow: clip;
+white-space: pre;
+background: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+text-shadow: 1px 1px 0 rgba(140,140,140,0.6) , -1px -1px 1px rgba(0,0,0,0.67) ;
+-webkit-transition: none;
+-moz-transition: none;
+-o-transition: none;
+transition: none;
+-webkit-transform: none;
+transform: none;
+-webkit-transform-origin: 50% 50% 0;
+transform-origin: 50% 50% 0;
+}
+
+.aladin{
+	font-family: 'Aladin', cursive;
+}
+ 
+ .vertical-center {  
+ 	margin-top: 8em;
+}
+ 
+ .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: rgba(51, 51, 51, 0.52);
+    color: rgba(255, 255, 255, 0.63);
+}
+
+.white-a{
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #c9b7c9;
+    background-color: rgba(51, 51, 51, 0.25);
+    background-image: none;
+    border: 1px solid #333;
+    font-weight: bold;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    color: rgb(201, 184, 201);
+    text-align: center;
+    background-color: #974e97;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+.panel-body{
+	background-color: #b69eb6;
+}
+.panel-default {
+	border-color:#954697;
+}
+.panel-default>.panel-heading {
+    color: #c9b8c9;
+    background-color: rgba(51, 51, 51, 0.88);
+    border-color: #ddd;
+}
+
+table {
+    background-color: hsla(299, 26%, 35%, 0.51);
+    color: rgb(80, 78, 78);
+}

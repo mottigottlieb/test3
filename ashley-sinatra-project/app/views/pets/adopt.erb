@@ -1,0 +1,41 @@
+<div class="container">
+   <div class="row">
+      <div class="col-lg-8 col-lg-push-2 vertical-center text-center test  jumbotron">
+         <!-- Default panel contents -->
+         <h1 class="fancy-text">Availble Pets</h1>
+         <p></p>
+         <div class="col-lg-6 col-lg-push-3 red">
+            <div class="panel panel-default">
+               <div class="panel-heading"><b>Pets:</b></div>
+               <table class="table">
+                  <thead>
+                     <tr>
+                        <th>
+                           #
+                        </th>
+                        <th>
+                           Name
+                        </th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <% @pet_id = 0%>
+                     <% Pet.adoptable_list.each do |pet| %>
+                     <%  @pet_id += 1%>
+                     <tr>
+                        <td>
+                           <%= @pet_id %>
+                        </td>
+                        <td>
+                           <a class="pull-left" href= "/pet/<%=pet.id%>"><%= pet.name %></a>
+                        </td>
+                     </tr>
+                     <%end%>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- /.row -->
+</div>

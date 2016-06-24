@@ -1,0 +1,62 @@
+<!-- Page Content -->
+<div class="container">
+   <div class="row">
+      <div class="col-lg-8 col-lg-push-2 vertical-center text-center test  jumbotron">
+         <!-- Default panel contents -->
+         <h1 class="fancy-text"><%=@pet.name%> </h1>
+         <p></p>
+         <div class=" col-lg-push-3 col-lg-7">
+            <div class="panel panel-default">
+               <div class="panel-heading">
+                  <h3 class="panel-title"><b>Details:</b></h3>
+               </div>
+               <div class="panel-body">
+                  <ul class="pull-left text-left">
+                     <li>
+                        <b>Owner:</b> <%=@pet.user.username%>
+                     </li>
+                     <li>
+                        <b>Breed:</b> <%=@pet.breed%>
+                     </li>
+                     <li>
+                        <b>Bio:</b> <%=@pet.bio%>
+                     </li>
+                     <%if @pet.adoptable%>
+                     <li> <b>Price:</b> <%=@pet.price%></li>
+                  </ul>
+               </div>
+               <%if @pet.user.id != session[:id]%>
+               <form method="post" action="/adopt">
+                  <input type="hidden" name="id" value="<%=@pet.id%>">
+                  <input type="submit" class="btn adopt btn-default" value="Adopt this pet">
+               </form>
+               <%end%>
+               <%end%>
+            </div>
+            <div class="panel-footer ad clearfix">
+               <div class="pull-right">
+                  <form method="get" action="/adopt">
+                     <input type="submit" class="btn btn-primary" value="Back to List">
+                  </form>
+                  <form method="post" action="/pet/<%=@pet.id%>/delete">
+                     <input type="submit" class="btn btn-primary" value="Delete Pet">
+                  </form>
+                  <%if @pet.adoptable%>
+                  Price:<%=@pet.price%>
+                  <%if @pet.user.id != session[:id]%>
+                  <form method="post" action="/adopt">
+                     <input type="hidden" name="id" value="<%=@pet.id%>">
+                     <input type="submit"  class="btn btn-primary" value="Adopt this pet">
+                  </form>
+                  <%end%>
+                  <%end%>
+               </div>
+            </div>
+         </div>
+         <!-- Button (Double) -->
+      </div>
+   </div>
+</div>
+</div>
+<!-- /.row -->
+</div>
